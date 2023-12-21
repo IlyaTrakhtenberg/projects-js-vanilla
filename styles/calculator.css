@@ -1,0 +1,45 @@
+body{
+    background-color: black;
+    font-family: Arial;
+}
+.grid{
+    display:grid;
+    grid-template-columns: 64px 64px 64px 64px;
+    grid-template-rows: 64px 64px 64px 64px 64px;
+}
+.grey{
+    cursor: pointer;
+    background-color: rgb(51, 51, 51);
+    color: white;
+    font-size: 24px;
+    border: none;
+    border-radius: 50%;
+    width: 90%;
+    height: 90%;
+}
+.clear{
+    cursor: pointer;
+    background-color: rgb(51, 51, 51);
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 50%;
+    width: 90%;
+    height: 90%;
+}
+.yellow{
+    cursor: pointer;
+    background-color: rgb(254, 160, 10);
+    color: white;
+    font-size: 24px;
+    border: none;
+    border-radius: 50%;
+    width: 90%;
+    height: 90%;
+}
+.input{
+    height: 48px;
+    font-size: 48px;
+    color: white;
+    margin: 4px 16px;
+}

@@ -1,0 +1,112 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+}
+.header{
+    width: 100%;
+    height: 100%;
+    padding: 12px;
+    font-size: 36px;
+    font-weight: bolder;
+    font-style: italic;
+    text-align: center;
+    background: linear-gradient(to left,white,rgb(177, 227, 200),white);
+}
+.grid2{
+    width: 50%;
+    margin: 12px auto;
+    display: grid;
+    grid-template-columns: 362px 202px;
+    column-gap: 12px;
+    align-items: center;
+}
+.grid4{
+    width: 50%;
+    margin: 12px auto;
+    display: grid;
+    grid-template-columns: 200px 150px 150px 40px;
+    column-gap: 12px;
+    row-gap: 12px;
+    align-items: center;
+}
+.main-title{
+    margin: 12px;
+    font-size: 32px;
+    text-align: center;
+}
+.main-nolists{
+    padding: 6px;
+    text-align: center;
+    font-size: 24px;
+    color: red;
+}
+.main-select{
+    padding: 9px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.title{
+    border: 2px solid;
+    font-size: 32px;
+    text-align: center;
+}
+.inp{
+    padding: 10px;
+}
+.button{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-size: 16px;
+    border: none;
+    border-radius: 0;
+    color: white;
+    cursor: pointer;
+}
+.green{
+    background-color: rgb(9, 89, 46);
+}
+.red{
+    background-color: rgb(127, 0, 0);
+}
+.black{
+    background-color: black;
+}
+.blue{
+    background-color: rgb(9, 68, 89);
+}
+.error{
+    width: 40%;
+    margin: 0 auto;
+    color: red;
+}
+.name{
+    max-width: 180px;
+}
+.check{
+    width: 38px;
+    height: 38px;
+    border: 2px solid;
+    border-radius: 0;
+}
+.checkCell{
+    width: 38px;
+    height: 38px;
+    border: 2px solid;
+    border-radius: 0;
+    background-color: white;
+}
+.complete{
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 0;
+    background-color: rgb(220,220,220);
+    cursor: pointer;
+}
+.icon{
+    width: 32px;
+    height: 32px;
+    padding-left: 4px;
+}
