@@ -3,7 +3,7 @@ let pad = document.querySelector('.js-pad');
 const set = 
 ['1','2','3','+','4','5','6','-','7','8','9','*','(','0',')','/','.','C','Clear','='];
 set.forEach((val,ind) => {
-    pad.innerHTML += `<button class="js-but${ind}">${val}</button>`;
+    pad.innerHTML += `<div class="col-3 square"><button class="js-but${ind} but">${val}</button></div>`;
 });
 set.forEach((val,ind)=>{
     (ind+1)%4 && document.querySelector(`.js-but${ind}`).classList.add('grey');
@@ -16,8 +16,6 @@ set.forEach((val,ind)=>{
 document.querySelector(`.js-but19`).onclick = () => eq();
 document.body
 .addEventListener('keydown',event => (event.key==='Enter' || event.key==='=') && eq());
-document.querySelector(`.js-but18`)
-.classList.add('clear');
 document.querySelector(`.js-but18`).onclick = () => del();
 document.body
 .addEventListener('keydown',event => (event.key==='Delete') && del());
