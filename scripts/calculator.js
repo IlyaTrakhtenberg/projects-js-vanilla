@@ -3,7 +3,7 @@ let pad = document.querySelector('.js-pad');
 const set = 
 ['1','2','3','+','4','5','6','-','7','8','9','*','(','0',')','/','.','C','Clear','='];
 set.forEach((val,ind) => {
-    pad.innerHTML += `<div class="col-3 square"><button class="js-but${ind} but">${val}</button></div>`;
+    pad.innerHTML += `<div class="col-3 p-0 cell"><button class="js-but${ind} but">${val}</button></div>`;
 });
 set.forEach((val,ind)=>{
     (ind+1)%4 && document.querySelector(`.js-but${ind}`).classList.add('grey');
