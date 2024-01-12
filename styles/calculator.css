@@ -3,7 +3,7 @@ body{
     font-family: Arial;
 }
 .pad-container{
-    max-width: 60vh;
+    max-width: 70vh;
     container-type: inline-size;
 }
 @container (inline-size){
@@ -25,7 +25,7 @@ body{
 .yellow{
     background-color: rgb(254, 160, 10);
 }
-@media screen and (min-aspect-ratio: 0){
+@media (max-width: 768px){
     .input{
         height: 20vh;
         font-size: 5vh;
@@ -34,7 +34,7 @@ body{
         word-wrap: break-word;
     }  
 }
-@media screen and (min-aspect-ratio: 17/15){
+@media (min-width: 768px){
     .input{
         height: 100%;
         font-size: 5vh;
