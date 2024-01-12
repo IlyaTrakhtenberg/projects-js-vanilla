@@ -34,7 +34,7 @@ body{
         word-wrap: break-word;
     }  
 }
-@media screen and (min-aspect-ratio: 19/13){
+@media screen and (min-aspect-ratio: 17/15){
     .input{
         height: 100%;
         font-size: 5vh;
