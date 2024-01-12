@@ -38,7 +38,7 @@ body{
     max-width: 100%;
     word-wrap: break-word;
 }  
-@media (min-width: 992px){
+@media (min-width: 768px){
     .input{
         height: 100%;
         font-size: 6vh;
