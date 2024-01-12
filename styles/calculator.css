@@ -3,8 +3,14 @@ body{
     font-family: Arial;
 }
 .pad-container{
-    max-width: 70vh;
+    max-width: 80vh;
     container-type: inline-size;
+}
+@media (min-width: 992px){
+    .pad-container{
+        max-width: 60vh;
+        container-type: inline-size;
+    }
 }
 @container (inline-size){
     .cell{
@@ -28,7 +34,7 @@ body{
 @media (max-width: 768px){
     .input{
         height: 20vh;
-        font-size: 5vh;
+        font-size: 6vh;
         color: white;
         max-width: 100%;
         word-wrap: break-word;
@@ -37,7 +43,7 @@ body{
 @media (min-width: 768px){
     .input{
         height: 100%;
-        font-size: 5vh;
+        font-size: 6vh;
         color: white;
         max-width: 100%;
         word-wrap: break-word;
