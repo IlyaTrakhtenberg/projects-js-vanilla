@@ -25,10 +25,22 @@ body{
 .yellow{
     background-color: rgb(254, 160, 10);
 }
-.input{
-    height: clamp(20vmax,calc((vw-vh)*1.5),100vh);
-    font-size: 5vh;
-    color: white;
-    max-width: 100%;
-    word-wrap: break-word;
+@media screen and (min-aspect-ratio: 0){
+    .input{
+        height: 20vh;
+        font-size: 5vh;
+        color: white;
+        max-width: 100%;
+        word-wrap: break-word;
+    }  
 }
+@media screen and (min-aspect-ratio: 19/13){
+    .input{
+        height: 100%;
+        font-size: 5vh;
+        color: white;
+        max-width: 100%;
+        word-wrap: break-word;
+    }  
+}
+
