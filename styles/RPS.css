@@ -2,23 +2,21 @@ body{
     background-color: rgb(20, 20, 20);
     color: white;
     font-family: Arial;
-}
-.flex{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    font-size: clamp(2vw,2.5vh,3.5vh);
 }
 .title{
-    height: 72px;
-    font-size: 32px;
-    font-weight: bold;
+    font-size: clamp(4vmax,3vh,5vh);
 }
-.moves{
-    display: grid;
-    grid-template-columns: 120px 120px 120px;
-    grid-auto-rows: 120px;
-    column-gap: 12px;
-    justify-content: center;
+.cont-col{
+    container-type: inline-size;
+}
+@container (inline-size){
+    .move-cont{
+        height: calc(100cqw/3);
+    }
+    .emoji{
+        height: 10cqw;
+    }
 }
 .move{
     width: 100%;
@@ -28,20 +26,6 @@ body{
     border-radius: 50%;
     cursor: pointer;
 }
-.emoji{
-    height: 48px;
-}
-.result{
-    height: 56px;
-    font-size: 24px;
-}
-.buttons{
-    display:grid;
-    grid-template-columns: 120px 120px;
-    grid-auto-rows: 40px;
-    column-gap: 12px;
-    justify-content: center;
-}
 .button{
     width: 100%;
     height: 100%;
@@ -49,25 +33,4 @@ body{
     border-radius: 0px;
     font-size: 16px;
     cursor: pointer;
-}
-.score{
-    height: 32px;
-}
-.comment{
-    height: 72px;
-}
-.confirm{
-    display: grid;
-    grid-template-columns: 300px 50px 50px;
-    grid-auto-rows: 36px;
-    column-gap: 12px;
-    align-items: center;
-    justify-content: center;
-}
-.resp{
-    width: 100%;
-    height: 80%;
-    font-size: 16px;
-    border: none;
-    border-radius: 0px;
 }
