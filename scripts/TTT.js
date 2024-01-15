@@ -1,11 +1,14 @@
 import {fieldRender,winner,drawLine,canvColor,buttonNew} from "./TTT-renderHTML.js";
 const result = document.querySelector('.js-result');
-const newGame = document.querySelector('.js-newGame');
+const newGame = document.querySelector('.js-new-game');
 const canv =  document.querySelector('.js-canvas').getContext('2d');
 const canvCSS = document.querySelector('.canvas');
 const field = document.querySelector('.js-field');
 let cells;
 let turn;
+canvCSS.height = canvCSS.parentElement.clientHeight;
+canvCSS.width = canvCSS.height;
+const a = canvCSS.height;
 clearField();
 function move(cell){
     if (turn === 0){
@@ -63,7 +66,7 @@ function finish(res,p1,p2){
     document.querySelectorAll('.js-but')
     .forEach(button => button.remove());
     canvColor(canvCSS,res);
-    res!=='Draw' && drawLine(canv,p1,p2);
+    res!=='Draw' && drawLine(a,canv,p1,p2);
     result.innerText = winner(res);
     newGame.innerHTML = buttonNew;
     document.querySelector('.js-new').onclick = ()=>clearField();
@@ -75,7 +78,7 @@ function clearField(){
         cells.push('');
     }
     canvColor(canvCSS,'');
-    canv.clearRect(0,0,300,150);
+    canv.clearRect(0,0,a,a);
     result.innerText = '';
     newGame.innerHTML = '';
     updField();

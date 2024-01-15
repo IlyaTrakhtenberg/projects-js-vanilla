@@ -1,7 +1,6 @@
 body{
     background-color: rgb(20, 20, 20);
     color: white;
-    font-family: Arial;
     font-size: clamp(2vw,2.5vh,3.5vh);
 }
 .title{

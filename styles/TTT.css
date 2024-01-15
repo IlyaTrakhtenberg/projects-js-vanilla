@@ -1,43 +1,58 @@
-body{
-    font-family: Arial;
+.container{
+    container-type: inline-size;
 }
-.grid{
-    position: absolute;
-    z-index: 2;
-    display: grid;
-    grid-template-columns: 50px 50px 50px;
-    grid-template-rows: 50px 50px 50px;
-}
-.cell{
-    border: 2px solid;
-    border-radius: 0px;
-    display: flex;
-    font-size: 24px;
-    justify-content: center;
-    align-items: center;
+@container (inline-size){
+    .field{
+        height: 90cqmin; 
+        width: 90cqmin;   
+        position: absolute;
+        z-index: 2;
+    }
+    .canvas{
+        position: relative;
+        z-index: 1;
+        width: 90cqmin;
+        height: 90cqmin;
+    }
+    
+    .cell{
+        border: 2px solid;
+        font-size: 15cqmin;
+        height: 30cqmin;
+    }
+    
+    .new{
+        width: 60cqmin;
+        border-radius: 0px;
+        border: 2px solid;
+        font-size: 3vh;
+        cursor: pointer;
+    }
+    .result{
+        font-size: 6vh;
+        font-weight: bolder;
+    }
+    @media (min-width: 405px){
+        .field{
+            height: 60cqh;
+            width: 60cqh;
+        }
+        .canvas{
+            height: 60cqh;
+            width: 60cqh;
+        }
+        .cell{
+            font-size: 10cqh;
+            height: 20cqh;
+        }
+        .new{
+            width: 40cqh;
+        }
+    }
 }
 .empty{
     width: 100%;
     height: 100%;
     opacity: 0%;
     cursor: pointer;
-}
-.canvas{
-    position: relative;
-    z-index: 1;
-    width: 150px;
-    height: 150px;
-}
-.new{
-    border-radius: 0px;
-    border: 2px solid;
-    font-size: 16px;
-    padding: 8px 12px;
-    margin-left: 24px;
-    cursor: pointer;
-}
-.result{
-    font-size: 20px;
-    font-weight: bolder;
-    margin: 16px 36px;
 }
