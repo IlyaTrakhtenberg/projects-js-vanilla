@@ -14,13 +14,18 @@
         width: 90cqmin;
         height: 90cqmin;
     }
-    
     .cell{
         border: 2px solid;
         font-size: 15cqmin;
         height: 30cqmin;
     }
     
+    .empty{
+        width: 100%;
+        height: 100%;
+        opacity: 0%;
+        cursor: pointer;
+    }
     .new{
         width: 60cqmin;
         border-radius: 0px;
@@ -32,7 +37,7 @@
         font-size: 6vh;
         font-weight: bolder;
     }
-    @media (min-width: 405px){
+    @media (min-width: 450px){
         .field{
             height: 60cqh;
             width: 60cqh;
@@ -49,10 +54,4 @@
             width: 40cqh;
         }
     }
-}
-.empty{
-    width: 100%;
-    height: 100%;
-    opacity: 0%;
-    cursor: pointer;
 }

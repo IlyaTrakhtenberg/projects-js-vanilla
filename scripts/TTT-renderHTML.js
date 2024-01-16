@@ -15,7 +15,7 @@ export function drawLine(a,canv,p1,p2){
     canv.moveTo((a/3)*(p1%3)+a/6,(a/3)*Math.floor(p1/3)+a/6);
     canv.lineTo((a/3)*(p2%3)+a/6,(a/3)*Math.floor(p2/3)+a/6);
     canv.strokeStyle = 'red';
-    canv.lineWidth = 3;
+    canv.lineWidth = a/100;
     canv.stroke();
 }
 export function canvColor(canvCSS,res){
